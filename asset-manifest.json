@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/physical-fitness-test/static/css/main.fa30f435.css",
+    "main.css": "/physical-fitness-test/static/css/main.9a573cbb.css",
     "main.js": "/physical-fitness-test/static/js/main.f3dda90f.js",
     "static/media/01.JPG": "/physical-fitness-test/static/media/01.17b83f3b3d75733cb3d8.JPG",
     "index.html": "/physical-fitness-test/index.html",
-    "main.fa30f435.css.map": "/physical-fitness-test/static/css/main.fa30f435.css.map",
+    "main.9a573cbb.css.map": "/physical-fitness-test/static/css/main.9a573cbb.css.map",
     "main.f3dda90f.js.map": "/physical-fitness-test/static/js/main.f3dda90f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa30f435.css",
+    "static/css/main.9a573cbb.css",
     "static/js/main.f3dda90f.js"
   ]
 }
