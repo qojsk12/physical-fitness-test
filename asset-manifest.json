@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/physical-fitness-test/static/css/main.71215482.css",
-    "main.js": "/physical-fitness-test/static/js/main.f3dda90f.js",
+    "main.css": "/physical-fitness-test/static/css/main.28644197.css",
+    "main.js": "/physical-fitness-test/static/js/main.ad135d78.js",
+    "static/media/02.png": "/physical-fitness-test/static/media/02.b3d212b7108e7bff2751.png",
     "static/media/01.JPG": "/physical-fitness-test/static/media/01.17b83f3b3d75733cb3d8.JPG",
     "index.html": "/physical-fitness-test/index.html",
-    "main.71215482.css.map": "/physical-fitness-test/static/css/main.71215482.css.map",
-    "main.f3dda90f.js.map": "/physical-fitness-test/static/js/main.f3dda90f.js.map"
+    "main.28644197.css.map": "/physical-fitness-test/static/css/main.28644197.css.map",
+    "main.ad135d78.js.map": "/physical-fitness-test/static/js/main.ad135d78.js.map"
   },
   "entrypoints": [
-    "static/css/main.71215482.css",
-    "static/js/main.f3dda90f.js"
+    "static/css/main.28644197.css",
+    "static/js/main.ad135d78.js"
   ]
 }
