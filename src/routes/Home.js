@@ -109,9 +109,8 @@ function Home() {
           {listSection === 't__cadio' && (
             <div className="physical__list">
               <div className="physical__list-item">
-                <div className="img__box">
-                  <img src={Img2} alt="" />
-                </div>
+                <img src={Img2} alt="" />
+
                 <div className="des__box">
                   <div>종목</div>
                   <div>20m 왕복 오래달리기</div>
@@ -122,9 +121,8 @@ function Home() {
                 </div>
               </div>
               <div className="physical__list-item">
-                <div className="img__box">
-                  <img src={Img2} alt="" />
-                </div>
+                <img src={Img2} alt="" />
+
                 <div className="des__box">
                   <div>종목</div>
                   <div>트레드밀</div>
@@ -135,9 +133,8 @@ function Home() {
                 </div>
               </div>
               <div className="physical__list-item">
-                <div className="img__box">
-                  <img src={Img2} alt="" />
-                </div>
+                <img src={Img2} alt="" />
+
                 <div className="des__box">
                   <div>종목</div>
                   <div>스텝 박스</div>
