@@ -112,81 +112,43 @@ function Home() {
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>20m 왕복 오래 달리기</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>횟수</td>
-                    </tr>
-                    <tr>
-                      <th rowSpan="2">시간</th>
-                      <td rowSpan="2">최대한 오래</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>20m 왕복 오래달리기</div>
+                  <div>등급 산정 방식</div>
+                  <div>횟수</div>
+                  <div>시간</div>
+                  <div>최대한 오래</div>
+                </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>트레드밀</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>심박수 + 신장 + 체중</td>
-                    </tr>
-                    <tr>
-                      <th rowSpan="2">시간</th>
-                      <td rowSpan="2">6분</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>트레드밀</div>
+                  <div>등급 산정 방식</div>
+                  <div>심박수 + 신장 + 체중</div>
+                  <div>시간</div>
+                  <div>6분</div>
+                </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>스텝겁사</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>심박수 + 신장 + 체중</td>
-                    </tr>
-                    <tr>
-                      <th rowSpan="2">시간</th>
-                      <td>남자 : 3분, 50.5cm, 126bpm</td>
-                    </tr>
-                    <tr>
-                      <td>여자 : 3분, 45.5cm, 96bpm</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>스텝 박스</div>
+                  <div>등급 산정 방식</div>
+                  <div>심박수 + 체중 + 신장</div>
+                  <div>시간</div>
+                  <div>
+                    남자: 3분, 50.5cm, 126bpm <br />
+                    여자: 3분, 45.5cm, 96bpm
+                  </div>
+                </div>
               </div>
             </div>
           )}
@@ -196,47 +158,27 @@ function Home() {
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>윗몸 말아올리기</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>횟수</td>
-                    </tr>
-                    <tr>
-                      <th>시간</th>
-                      <td>최대한 오래</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>윗몸 말아올리기</div>
+                  <div>등급 산정 방식</div>
+                  <div>횟수</div>
+                  <div>시간</div>
+                  <div>최대한 많이</div>
+                </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>반복 점프</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>횟수</td>
-                    </tr>
-                    <tr>
-                      <th>시간</th>
-                      <td>30초</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>반복 점프</div>
+                  <div>등급 산정 방식</div>
+                  <div>횟수</div>
+                  <div>시간</div>
+                  <div>30초</div>
+                </div>
               </div>
             </div>
           )}
@@ -246,81 +188,42 @@ function Home() {
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>20m 왕복 오래 달리기</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>횟수</td>
-                    </tr>
-                    <tr>
-                      <th rowSpan="2">시간</th>
-                      <td rowSpan="2">최대한 오래</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>20m 왕복 오래달리기</div>
+                  <div>등급 산정 방식</div>
+                  <div>횟수</div>
+                  <div>시간</div>
+                  <div>최대한 오래</div>
+                </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>트레드밀</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>심박수 + 신장 + 체중</td>
-                    </tr>
-                    <tr>
-                      <th rowSpan="2">시간</th>
-                      <td>남자 : 9분</td>
-                    </tr>
-                    <tr>
-                      <td>여자 : 6분</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>트레드밀</div>
+                  <div>등급 산정 방식</div>
+                  <div>심박수 + 신장 + 체중</div>
+                  <div>시간</div>
+                  <div>
+                    남자: 9분 <br /> 여자: 6분
+                  </div>
+                </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
                   <img src={Img2} alt="img" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>스텝겁사</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>심박수 + 신장 + 체중</td>
-                    </tr>
-                    <tr>
-                      <th rowSpan="2">시간</th>
-                      <td rowSpan="2">3분, 30cm, 96bpm</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>스텝 박스</div>
+                  <div>등급 산정 방식</div>
+                  <div>심박수 + 체중 + 신장</div>
+                  <div>시간</div>
+                  <div>3분, 30.5cm, 96bpm</div>
+                </div>
               </div>
             </div>
           )}
@@ -330,39 +233,27 @@ function Home() {
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>10m 왕복 달리기</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>시간</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>10m 왕복 달리기</div>
+                  <div>등급 산정 방식</div>
+                  <div>시간</div>
+                  <div>시간</div>
+                  <div>최대한 빠르게</div>
+                </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>반응시간</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>시간</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>반응 시간</div>
+                  <div>등급 산정 방식</div>
+                  <div>시간</div>
+                  <div>시간</div>
+                  <div>최대한 빠르게</div>
+                </div>
               </div>
             </div>
           )}
@@ -372,39 +263,27 @@ function Home() {
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>제자리 멀리 뛰기</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>멀리 뛴 거리</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>제자리 멀리뛰기</div>
+                  <div>등급 산정 방식</div>
+                  <div>멀리 뛴 거리</div>
+                  <div>시간</div>
+                  <div>제한 시간 없음</div>
+                </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>체공시간</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>공중에 떠 있는 시간</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>체공 시간</div>
+                  <div>등급 산정 방식</div>
+                  <div>공중에 떠 있는 시간</div>
+                  <div>시간</div>
+                  <div>제한 시간 없음</div>
+                </div>
               </div>
             </div>
           )}
@@ -414,47 +293,27 @@ function Home() {
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>2분 제자리 걷기</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>횟수</td>
-                    </tr>
-                    <tr>
-                      <th>시간</th>
-                      <td>2분</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>2분 제자리 걷기</div>
+                  <div>등급 산정 방식</div>
+                  <div>횟수</div>
+                  <div>시간</div>
+                  <div>2분</div>
+                </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
                   <img src={Img2} alt="" />
                 </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>종목</th>
-                      <td>6분 걷기</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>등급 산정 방식</th>
-                      <td>거리</td>
-                    </tr>
-                    <tr>
-                      <th>시간</th>
-                      <td>6분</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="des__box">
+                  <div>종목</div>
+                  <div>6분 걷기</div>
+                  <div>등급 산정 방식</div>
+                  <div>거리</div>
+                  <div>시간</div>
+                  <div>6분</div>
+                </div>
               </div>
             </div>
           )}
