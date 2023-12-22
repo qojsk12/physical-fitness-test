@@ -133,7 +133,6 @@ function Home() {
               </div>
               <div className="physical__list-item">
                 <img src={Img2} alt="" />
-
                 <div className="des__box">
                   <div>종목</div>
                   <div>스텝 박스</div>
