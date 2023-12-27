@@ -109,36 +109,42 @@ function Home() {
           {listSection === "t__cadio" && (
             <div className="physical__list mobile">
               <div className="physical__list-item">
-                <img src={Img2} alt="" />
+                <div className="img__box">
+                  <img className="img__item" src={Img2} alt="" />
+                </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>20m 왕복 오래달리기</div>
-                  <div>등급 산정 방식</div>
-                  <div>횟수</div>
-                  <div>시간</div>
-                  <div>최대한 오래</div>
+                  <div className="description">종목</div>
+                  <div className="description">20m 왕복 오래달리기</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">횟수</div>
+                  <div className="description">시간</div>
+                  <div className="description">최대한 오래</div>
                 </div>
               </div>
               <div className="physical__list-item">
-                <img src={Img2} alt="" />
+                <div className="img__box">
+                  <img className="img__item" src={Img2} alt="" />
+                </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>트레드밀</div>
-                  <div>등급 산정 방식</div>
-                  <div>심박수 + 신장 + 체중</div>
-                  <div>시간</div>
-                  <div>6분</div>
+                  <div className="description">종목</div>
+                  <div className="description">트레드밀</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">심박수 + 신장 + 체중</div>
+                  <div className="description">시간</div>
+                  <div className="description">6분</div>
                 </div>
               </div>
               <div className="physical__list-item">
-                <img src={Img2} alt="" />
+                <div className="img__box">
+                  <img className="img__item" src={Img2} alt="" />
+                </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>스텝 박스</div>
-                  <div>등급 산정 방식</div>
-                  <div>심박수 + 체중 + 신장</div>
-                  <div>시간</div>
-                  <div>
+                  <div className="description">종목</div>
+                  <div className="description">스텝 박스</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">심박수 + 체중 + 신장</div>
+                  <div className="description">시간</div>
+                  <div className="description">
                     남자: 3분, 50.5cm, 126bpm <br />
                     여자: 3분, 45.5cm, 96bpm
                   </div>
@@ -150,28 +156,28 @@ function Home() {
             <div className="physical__list mobile">
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>윗몸 말아올리기</div>
-                  <div>등급 산정 방식</div>
-                  <div>횟수</div>
-                  <div>시간</div>
-                  <div>최대한 많이</div>
+                  <div className="description">종목</div>
+                  <div className="description">윗몸 말아올리기</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">횟수</div>
+                  <div className="description">시간</div>
+                  <div className="description">최대한 많이</div>
                 </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>반복 점프</div>
-                  <div>등급 산정 방식</div>
-                  <div>횟수</div>
-                  <div>시간</div>
-                  <div>30초</div>
+                  <div className="description">종목</div>
+                  <div className="description">반복 점프</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">횟수</div>
+                  <div className="description">시간</div>
+                  <div className="description">30초</div>
                 </div>
               </div>
             </div>
@@ -180,43 +186,43 @@ function Home() {
             <div className="physical__list mobile">
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>20m 왕복 오래달리기</div>
-                  <div>등급 산정 방식</div>
-                  <div>횟수</div>
-                  <div>시간</div>
-                  <div>최대한 오래</div>
+                  <div className="description">종목</div>
+                  <div className="description">20m 왕복 오래달리기</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">횟수</div>
+                  <div className="description">시간</div>
+                  <div className="description">최대한 오래</div>
                 </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>트레드밀</div>
-                  <div>등급 산정 방식</div>
-                  <div>심박수 + 신장 + 체중</div>
-                  <div>시간</div>
-                  <div>
+                  <div className="description">종목</div>
+                  <div className="description">트레드밀</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">심박수 + 신장 + 체중</div>
+                  <div className="description">시간</div>
+                  <div className="description">
                     남자: 9분 <br /> 여자: 6분
                   </div>
                 </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="img" />
+                  <img className="img__item" src={Img2} alt="img" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>스텝 박스</div>
-                  <div>등급 산정 방식</div>
-                  <div>심박수 + 체중 + 신장</div>
-                  <div>시간</div>
-                  <div>3분, 30.5cm, 96bpm</div>
+                  <div className="description">종목</div>
+                  <div className="description">스텝 박스</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">심박수 + 체중 + 신장</div>
+                  <div className="description">시간</div>
+                  <div className="description">3분, 30.5cm, 96bpm</div>
                 </div>
               </div>
             </div>
@@ -225,28 +231,28 @@ function Home() {
             <div className="physical__list mobile">
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>10m 왕복 달리기</div>
-                  <div>등급 산정 방식</div>
-                  <div>시간</div>
-                  <div>시간</div>
-                  <div>최대한 빠르게</div>
+                  <div className="description">종목</div>
+                  <div className="description">10m 왕복 달리기</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">시간</div>
+                  <div className="description">시간</div>
+                  <div className="description">최대한 빠르게</div>
                 </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>반응 시간</div>
-                  <div>등급 산정 방식</div>
-                  <div>시간</div>
-                  <div>시간</div>
-                  <div>최대한 빠르게</div>
+                  <div className="description">종목</div>
+                  <div className="description">반응 시간</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">시간</div>
+                  <div className="description">시간</div>
+                  <div className="description">최대한 빠르게</div>
                 </div>
               </div>
             </div>
@@ -255,28 +261,28 @@ function Home() {
             <div className="physical__list mobile">
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>제자리 멀리뛰기</div>
-                  <div>등급 산정 방식</div>
-                  <div>멀리 뛴 거리</div>
-                  <div>시간</div>
-                  <div>제한 시간 없음</div>
+                  <div className="description">종목</div>
+                  <div className="description">제자리 멀리뛰기</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">멀리 뛴 거리</div>
+                  <div className="description">시간</div>
+                  <div className="description">제한 시간 없음</div>
                 </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>체공 시간</div>
-                  <div>등급 산정 방식</div>
-                  <div>공중에 떠 있는 시간</div>
-                  <div>시간</div>
-                  <div>제한 시간 없음</div>
+                  <div className="description">종목</div>
+                  <div className="description">체공 시간</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">공중에 떠 있는 시간</div>
+                  <div className="description">시간</div>
+                  <div className="description">제한 시간 없음</div>
                 </div>
               </div>
             </div>
@@ -285,28 +291,28 @@ function Home() {
             <div className="physical__list mobile">
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>2분 제자리 걷기</div>
-                  <div>등급 산정 방식</div>
-                  <div>횟수</div>
-                  <div>시간</div>
-                  <div>2분</div>
+                  <div className="description">종목</div>
+                  <div className="description">2분 제자리 걷기</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">횟수</div>
+                  <div className="description">시간</div>
+                  <div className="description">2분</div>
                 </div>
               </div>
               <div className="physical__list-item">
                 <div className="img__box">
-                  <img src={Img2} alt="" />
+                  <img className="img__item" src={Img2} alt="" />
                 </div>
                 <div className="des__box">
-                  <div>종목</div>
-                  <div>6분 걷기</div>
-                  <div>등급 산정 방식</div>
-                  <div>거리</div>
-                  <div>시간</div>
-                  <div>6분</div>
+                  <div className="description">종목</div>
+                  <div className="description">6분 걷기</div>
+                  <div className="description">등급 산정 방식</div>
+                  <div className="description">거리</div>
+                  <div className="description">시간</div>
+                  <div className="description">6분</div>
                 </div>
               </div>
             </div>
