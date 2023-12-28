@@ -81,7 +81,7 @@ function Home() {
                 </li>
                 <li
                   className={`common ${
-                    listSection === 'a__cadio' ? 'clicked' : ''
+                    listSection === 'a__power' ? 'clicked' : ''
                   }`}
                   onClick={() => handleListSectionClick('a__power')}
                 >
