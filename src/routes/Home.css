@@ -1,105 +1,37 @@
 @import '../reset.css';
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .header_main_name {
-    .header__img {
-      display: none;
-    }
-    .header__span {
-      grid-column: 1 / span 2;
-    }
-  }
-  .sidebar {
-    &.mobile {
-      display: flex;
-      flex-direction: column;
-      .select__menu.mobile {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        .h2__title {
-          padding-top: 8px;
-        }
-        .ages {
-          margin-bottom: 8px;
-        }
-      }
-    }
-    .gif__description {
-      .physical__list {
-        flex-direction: column;
-      }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
-  .header_main_name {
-    .header__img {
-      display: none;
-    }
-    .header__span {
-      grid-column: 1 / span 2;
-    }
-  }
-  .sidebar {
-    &.mobile {
-      display: flex;
-      flex-direction: column;
-      .select__menu.mobile {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        .h2__title {
-          padding-top: 8px;
-        }
-        .ages {
-          margin-bottom: 8px;
-        }
-      }
-    }
-    .gif__description {
-      .physical__list {
-        flex-direction: column;
-      }
-    }
-  }
-}
-
-.container {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 10fr;
-}
-
 .clicked {
   color: #d9ff00;
 }
 
-.header_main_name {
-  background-color: #fff;
+.container {
+  width: 100%;
+  height: 100vh;
   display: grid;
-  grid-template-columns: 0.5fr 3.5fr;
-  font-weight: 600;
-  align-items: center;
-  .header__span {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    text-align: center;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 10fr;
+  .header_main_name {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.35fr 10fr;
+    .header__img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .header__span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+    }
   }
-  .header__img {
-    width: 100%;
-    padding-left: 8px;
-    object-fit: cover;
-  }
-}
 
-.sidebar {
-  display: grid;
-  grid-template-columns: 1.5fr 10fr;
-  box-shadow: 0px 5px 20px 0px #898888;
   .select__menu {
+    grid-column: 1 / 2;
+    box-shadow: 0px 5px 20px 0px #898888;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -111,7 +43,7 @@
       padding-top: 14px;
     }
     .ages {
-      margin-top: 10px;
+      margin: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -216,56 +148,54 @@
       }
     }
   }
+
   .gif__description {
+    width: 100%;
+    box-sizing: border-box;
     padding: 40px 60px;
-    .physical__list {
-      box-shadow: 0px 10px 20px 10px #898888;
-      width: 100%;
-      height: 100%;
+    .physical__list-des {
       display: flex;
-      justify-content: center;
+      width: 100%;
+      height: calc(100vh - 180px);
+      gap: 50px;
       align-items: center;
-      background-color: #000;
-      gap: 3px;
-      border: 3px solid #000;
-      box-sizing: border-box;
+      justify-content: center;
       .physical__list-item {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-rows: 3fr 1fr;
         height: 100%;
-        img {
-          width: 100%;
-          height: 30em;
-          background-color: #fff;
-          box-sizing: border-box;
-          padding: 3px;
-          max-height: 100%;
-          object-fit: contain;
-        }
-        .des__box {
-          display: grid;
+        box-shadow: 0px 10px 20px 10px #898888;
+        box-sizing: border-box;
+        border: 3px solid #000;
+        background-color: #000;
+        gap: 3px;
+        .img__box {
           width: 100%;
           height: 100%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .des__box {
+          background-color: #000;
+          height: 100%;
+          display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: repeat(3, 1fr);
           gap: 3px;
-          padding-top: 3px;
-          div {
+          .img__description {
+            background-color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
             font-size: 20px;
-            text-align: center;
+            white-space: nowrap;
           }
         }
       }
     }
   }
 }
-
-/* 작성자 : 김준성 */
