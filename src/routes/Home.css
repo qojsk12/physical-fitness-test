@@ -157,7 +157,7 @@
     .physical__list-des {
       display: flex;
       width: 100%;
-      height: calc(100vh - 180px);
+      height: calc(100vh - 160px);
       gap: 50px;
       align-items: center;
       justify-content: center;
