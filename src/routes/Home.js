@@ -34,13 +34,15 @@ function Home() {
             {activeSection === 'teenager' && (
               <div className="physical__list">
                 <li
-                  className={`${listSection === 't__cadio' ? 'clicked' : ''}`}
+                  className={`common ${
+                    listSection === 't__cadio' ? 'clicked' : ''
+                  }`}
                   onClick={() => handleListSectionClick('t__cadio')}
                 >
                   심폐지구력
                 </li>
                 <li
-                  className={`${
+                  className={`common ${
                     listSection === 't__muscular' ? 'clicked' : ''
                   }`}
                   onClick={() => handleListSectionClick('t__muscular')}
@@ -62,19 +64,25 @@ function Home() {
             {activeSection === 'adult' && (
               <div className="physical__list">
                 <li
-                  className={`${listSection === 'a__cadio' ? 'clicked' : ''}`}
+                  className={`common ${
+                    listSection === 'a__cadio' ? 'clicked' : ''
+                  }`}
                   onClick={() => handleListSectionClick('a__cadio')}
                 >
                   심폐지구력
                 </li>
                 <li
-                  className={`${listSection === 'a__speed' ? 'clicked' : ''}`}
+                  className={`common  ${
+                    listSection === 'a__speed' ? 'clicked' : ''
+                  }`}
                   onClick={() => handleListSectionClick('a__speed')}
                 >
                   민첩성
                 </li>
                 <li
-                  className={`${listSection === 'a__power' ? 'clicked' : ''}`}
+                  className={`common ${
+                    listSection === 'a__cadio' ? 'clicked' : ''
+                  }`}
                   onClick={() => handleListSectionClick('a__power')}
                 >
                   순발력
@@ -94,7 +102,9 @@ function Home() {
             {activeSection === 'elder' && (
               <div className="physical__list">
                 <li
-                  className={`${listSection === 'e__cadio' ? 'clicked' : ''}`}
+                  className={`common ${
+                    listSection === 'e__cadio' ? 'clicked' : ''
+                  }`}
                   onClick={() => handleListSectionClick('e__cadio')}
                 >
                   심폐지구력
@@ -110,7 +120,7 @@ function Home() {
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -123,7 +133,7 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -136,7 +146,7 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -156,7 +166,7 @@ function Home() {
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -169,7 +179,7 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -186,7 +196,7 @@ function Home() {
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -199,7 +209,7 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -214,7 +224,7 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="img" />
+                <img className="gif-img" src={Img2} alt="img" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -231,7 +241,7 @@ function Home() {
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -244,7 +254,7 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -261,7 +271,7 @@ function Home() {
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -274,7 +284,7 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -291,7 +301,7 @@ function Home() {
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -304,7 +314,7 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img src={Img2} alt="" />
+                <img className="gif-img" src={Img2} alt="" />
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
