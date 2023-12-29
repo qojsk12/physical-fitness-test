@@ -15,7 +15,7 @@ function Home() {
   };
 
   return (
-    <div className="container">
+    <div className="container mobile">
       <header className="header_main_name">
         <img className="header__img" src={Img} alt="" />
         <span className="header__span">체력측정 선택 종목 안내</span>
