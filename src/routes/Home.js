@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import './Home.css';
-import Img from '../image/01.png';
-import Img2 from '../image/02.png';
+import React, { useState } from "react";
+import "./Home.css";
+import Img from "../image/01.png";
+import Img2 from "../image/02.png";
 
 function Home() {
   const [activeSection, setActiveSection] = useState(null);
@@ -27,25 +27,25 @@ function Home() {
           <ul className="teenager">
             <span
               className="custom-div div-8"
-              onClick={() => handleSectionClick('teenager')}
+              onClick={() => handleSectionClick("teenager")}
             >
               청소년기
             </span>
-            {activeSection === 'teenager' && (
+            {activeSection === "teenager" && (
               <div className="physical__list">
                 <li
                   className={`common ${
-                    listSection === 't__cadio' ? 'clicked' : ''
+                    listSection === "t__cadio" ? "clicked" : ""
                   }`}
-                  onClick={() => handleListSectionClick('t__cadio')}
+                  onClick={() => handleListSectionClick("t__cadio")}
                 >
                   심폐지구력
                 </li>
                 <li
                   className={`common ${
-                    listSection === 't__muscular' ? 'clicked' : ''
+                    listSection === "t__muscular" ? "clicked" : ""
                   }`}
-                  onClick={() => handleListSectionClick('t__muscular')}
+                  onClick={() => handleListSectionClick("t__muscular")}
                 >
                   근지구력
                 </li>
@@ -57,33 +57,33 @@ function Home() {
           <ul className="adult">
             <span
               className="custom-div div-8"
-              onClick={() => handleSectionClick('adult')}
+              onClick={() => handleSectionClick("adult")}
             >
               성인기
             </span>
-            {activeSection === 'adult' && (
+            {activeSection === "adult" && (
               <div className="physical__list">
                 <li
                   className={`common ${
-                    listSection === 'a__cadio' ? 'clicked' : ''
+                    listSection === "a__cadio" ? "clicked" : ""
                   }`}
-                  onClick={() => handleListSectionClick('a__cadio')}
+                  onClick={() => handleListSectionClick("a__cadio")}
                 >
                   심폐지구력
                 </li>
                 <li
                   className={`common  ${
-                    listSection === 'a__speed' ? 'clicked' : ''
+                    listSection === "a__speed" ? "clicked" : ""
                   }`}
-                  onClick={() => handleListSectionClick('a__speed')}
+                  onClick={() => handleListSectionClick("a__speed")}
                 >
                   민첩성
                 </li>
                 <li
                   className={`common ${
-                    listSection === 'a__power' ? 'clicked' : ''
+                    listSection === "a__power" ? "clicked" : ""
                   }`}
-                  onClick={() => handleListSectionClick('a__power')}
+                  onClick={() => handleListSectionClick("a__power")}
                 >
                   순발력
                 </li>
@@ -95,17 +95,17 @@ function Home() {
           <ul className="elder">
             <span
               className="custom-div div-8"
-              onClick={() => handleSectionClick('elder')}
+              onClick={() => handleSectionClick("elder")}
             >
               어르신기
             </span>
-            {activeSection === 'elder' && (
+            {activeSection === "elder" && (
               <div className="physical__list">
                 <li
                   className={`common ${
-                    listSection === 'e__cadio' ? 'clicked' : ''
+                    listSection === "e__cadio" ? "clicked" : ""
                   }`}
-                  onClick={() => handleListSectionClick('e__cadio')}
+                  onClick={() => handleListSectionClick("e__cadio")}
                 >
                   심폐지구력
                 </li>
@@ -116,7 +116,8 @@ function Home() {
       </div>
 
       <div className="gif__description">
-        {listSection === 't__cadio' && (
+        {listSection === null && <div className="physical__list-des"></div>}
+        {listSection === "t__cadio" && (
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
@@ -162,7 +163,7 @@ function Home() {
             </div>
           </div>
         )}
-        {listSection === 't__muscular' && (
+        {listSection === "t__muscular" && (
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
@@ -192,7 +193,7 @@ function Home() {
             </div>
           </div>
         )}
-        {listSection === 'a__cadio' && (
+        {listSection === "a__cadio" && (
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
@@ -237,7 +238,7 @@ function Home() {
             </div>
           </div>
         )}
-        {listSection === 'a__speed' && (
+        {listSection === "a__speed" && (
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
@@ -267,7 +268,7 @@ function Home() {
             </div>
           </div>
         )}
-        {listSection === 'a__power' && (
+        {listSection === "a__power" && (
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
@@ -297,7 +298,7 @@ function Home() {
             </div>
           </div>
         )}
-        {listSection === 'e__cadio' && (
+        {listSection === "e__cadio" && (
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
