@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/physical-fitness-test/static/css/main.f8b2cd97.css",
-    "main.js": "/physical-fitness-test/static/js/main.f1320c5c.js",
+    "main.css": "/physical-fitness-test/static/css/main.58960136.css",
+    "main.js": "/physical-fitness-test/static/js/main.7abce193.js",
     "static/media/02.gif": "/physical-fitness-test/static/media/02.4fa094bc685b65399fcb.gif",
+    "static/media/2분제자리걷기.mp4": "/physical-fitness-test/static/media/2분제자리걷기.a640898dd6276b85edd7.mp4",
+    "static/media/6분걷기.mp4": "/physical-fitness-test/static/media/6분걷기.736ceda5450992732b51.mp4",
     "static/media/01.png": "/physical-fitness-test/static/media/01.c979f95aa3fdff703dfa.png",
     "static/media/혈압.png": "/physical-fitness-test/static/media/혈압.173a7bff69192bccec2f.png",
     "index.html": "/physical-fitness-test/index.html",
-    "main.f8b2cd97.css.map": "/physical-fitness-test/static/css/main.f8b2cd97.css.map",
-    "main.f1320c5c.js.map": "/physical-fitness-test/static/js/main.f1320c5c.js.map"
+    "main.58960136.css.map": "/physical-fitness-test/static/css/main.58960136.css.map",
+    "main.7abce193.js.map": "/physical-fitness-test/static/js/main.7abce193.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8b2cd97.css",
-    "static/js/main.f1320c5c.js"
+    "static/css/main.58960136.css",
+    "static/js/main.7abce193.js"
   ]
 }
