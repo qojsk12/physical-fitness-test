@@ -75,6 +75,10 @@
   color: #d9ff00;
 }
 
+.hide-controls {
+  display: none;
+}
+
 .container {
   font-family: 'Jua', sans-serif;
   width: 100%;

@@ -3,6 +3,8 @@ import './Home.css';
 import Img from '../image/01.png';
 import Img2 from '../image/02.gif';
 import Img3 from '../image/혈압.png';
+import Work2min from '../video/2분제자리걷기.mp4';
+import Work6min from '../video/6분걷기.mp4';
 
 function Home() {
   const [activeSection, setActiveSection] = useState(null);
@@ -303,7 +305,14 @@ function Home() {
           <div className="physical__list-des">
             <div className="physical__list-item">
               <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
+                <video
+                  className="gif-img"
+                  controlsList="nofullscreen"
+                  controls
+                  muted
+                >
+                  <source src={Work2min} type="video/mp4" />
+                </video>
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
@@ -315,7 +324,14 @@ function Home() {
             </div>
             <div className="physical__list-item">
               <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
+                <video
+                  className="gif-img"
+                  controlsList="nofullscreen"
+                  controls
+                  muted
+                >
+                  <source src={Work6min} type="video/mp4" />
+                </video>
               </div>
               <div className="des__box">
                 <div className="img__description">종목</div>
