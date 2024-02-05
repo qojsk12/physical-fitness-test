@@ -257,20 +257,20 @@
             }
           }
         }
-      }
-      .img__box {
-        width: 100%;
-        height: 600px;
-        overflow: hidden;
-
-        .gif-img {
-          padding: 1px;
+        .img__box {
           width: 100%;
           height: 600px;
-          object-fit: cover;
-          box-sizing: border-box;
+          overflow: hidden;
+          .gif-img {
+            padding: 1px;
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            box-sizing: border-box;
+          }
         }
       }
+
       .des__box {
         background-color: #000;
         height: 100%;
