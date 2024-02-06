@@ -7,6 +7,7 @@ import Work2min from '../video/2분제자리걷기.mp4';
 import Work6min from '../video/6분걷기.mp4';
 import Run10m from '../video/10m왕복달리기.mp4';
 import SpeedTime from '../video/반응시간.mp4';
+import BloodDes from '../image/혈압소견서.png';
 
 function Home() {
   const [activeSection, setActiveSection] = useState(null);
@@ -128,7 +129,26 @@ function Home() {
           <div className="physical__list-des">
             <div className="physical__list-item main">
               <div className="img__box mainImg">
-                <img className="main-img" src={Img3} alt="" />
+                <img
+                  onClick={() => handleListSectionClick('blooddes')}
+                  className="main-img"
+                  src={Img3}
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        )}
+        {listSection === 'blooddes' && (
+          <div className="physical__list-des">
+            <div className="physical__list-item main">
+              <div className="img__box mainImg">
+                <img
+                  onClick={() => handleListSectionClick(null)}
+                  className="main-img"
+                  src={BloodDes}
+                  alt=""
+                />
               </div>
             </div>
           </div>
