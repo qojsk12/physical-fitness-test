@@ -17,6 +17,9 @@ function Home() {
   const [listSection, setListSection] = useState(null);
   const handleListSectionClick = (list) => {
     setListSection(listSection === list ? null : list);
+    setTimeout(() => {
+      setListSection(null);
+    }, 300000);
   };
 
   return (
