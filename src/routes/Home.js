@@ -19,6 +19,7 @@ function Home() {
   const handleListSectionClick = (list) => {
     setListSection(listSection === list ? null : list);
     setTimeout(() => {
+      setActiveSection(null);
       setListSection(null);
     }, 300000);
   };
