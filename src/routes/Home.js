@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Home.css';
 import Img from '../image/01.png';
 import Img2 from '../image/02.gif';
@@ -18,11 +18,27 @@ function Home() {
   const [listSection, setListSection] = useState(null);
   const handleListSectionClick = (list) => {
     setListSection(listSection === list ? null : list);
-    setTimeout(() => {
-      setActiveSection(null);
-      setListSection(null);
-    }, 300000);
   };
+
+  useEffect(() => {
+    let mouseTimer;
+
+    const handleMouseMove = () => {
+      clearTimeout(mouseTimer);
+
+      mouseTimer = setTimeout(() => {
+        setActiveSection(null);
+        setListSection(null);
+      }, 300000);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      clearTimeout(mouseTimer);
+    };
+  }, []);
 
   return (
     <div className="container mobile">
