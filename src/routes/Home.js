@@ -29,7 +29,7 @@ function Home() {
       mouseTimer = setTimeout(() => {
         setActiveSection(null);
         setListSection(null);
-      }, 300000);
+      }, 120000);
     };
 
     window.addEventListener('mousemove', handleMouseMove);
