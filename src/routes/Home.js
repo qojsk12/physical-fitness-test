@@ -20,6 +20,190 @@ function Home() {
     setListSection(listSection === list ? null : list);
   };
 
+  const [listImg, setListImg] = useState(null);
+  const handleListImgClick = (item) => {
+    setListImg(listImg === item ? null : item);
+  };
+
+  const renderMainImg = () => {
+    return (
+      <div className="physical__list-des">
+        <div className="physical__list-item main">
+          <div
+            className="img__box mainImg"
+            onClick={() => handleListImgClick('blooddes')}
+          >
+            {listImg === 'blooddes' ? (
+              <img className="main-img" src={BloodDes} alt="" />
+            ) : (
+              <img className="main-img" src={Img3} alt="" />
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const t__CardioItems = [
+    {
+      videoSrc: Img2,
+      title: '20m 왕복 오래달리기',
+      gradingMethod: '등급 산정 방식',
+      description: '횟수',
+      duration: '진행 시간: 최대한 오래',
+    },
+    {
+      videoSrc: Img2,
+      title: '트레드밀',
+      gradingMethod: '등급 산정 방식',
+      description: '심박수 + 신장 + 체중',
+      duration: '진행 시간: 6분',
+    },
+    {
+      imgSrc: Img2,
+      title: '스텝 박스',
+      gradingMethod: '등급 산정 방식',
+      description: '심박수 + 체중 + 신장',
+      duration: '남자: 3분, 50.8cm, 126bpm, 여자: 3분, 45.7cm, 96bpm',
+      onClick: () => handleListImgClick('women'),
+    },
+  ];
+
+  const t__MuscularItems = [
+    {
+      videoSrc: Img2,
+      title: '윗몸 말아올리기',
+      gradingMethod: '등급 산정 방식',
+      description: '횟수',
+      duration: '최대한 많이',
+    },
+    {
+      videoSrc: Img2,
+      title: '반복점프',
+      gradingMethod: '등급 산정 방식',
+      description: '횟수',
+      duration: '진행 시간: 30초',
+    },
+  ];
+
+  const a__CardioItems = [
+    {
+      videoSrc: Img2,
+      title: '20m 왕복 오래달리기',
+      gradingMethod: '등급 산정 방식',
+      description: '횟수',
+      duration: '진행 시간: 최대한 오래',
+    },
+    {
+      videoSrc: Img2,
+      title: '트레드밀',
+      gradingMethod: '등급 산정 방식',
+      description: '심박수 + 신장 + 체중',
+      duration: {
+        male: '남자: 9분',
+        female: '여자: 6분',
+      },
+    },
+    {
+      imgSrc: Img2,
+      title: '스텝 박스',
+      gradingMethod: '등급 산정 방식',
+      description: '심박수 + 체중 + 신장',
+      duration: '3분, 30.5cm, 96bpm',
+    },
+  ];
+
+  const a__SpeedItems = [
+    {
+      videoSrc: Run10m,
+      title: '10m 왕복 달리기',
+      gradingMethod: '등급 산정 방식',
+      description: '시간',
+      duration: '최대한 빠르게',
+    },
+    {
+      videoSrc: SpeedTime,
+      title: '반응 시간',
+      gradingMethod: '등급 산정 방식',
+      description: '시간',
+      duration: '최대한 빠르게',
+    },
+  ];
+
+  const a__PowerItems = [
+    {
+      videoSrc: Img2,
+      title: '제자리 멀리뛰기',
+      gradingMethod: '등급 산정 방식',
+      description: '멀리 뛴 거리',
+      duration: '2번 진행',
+    },
+    {
+      videoSrc: Img2,
+      title: '체공 시간',
+      gradingMethod: '등급 산정 방식',
+      description: '공중에 떠 있는 시간',
+      duration: '제한 시간 없음',
+    },
+  ];
+
+  const e__CadioItems = [
+    {
+      videoSrc: Work2min,
+      title: '2분 제자리 걷기',
+      gradingMethod: '등급 산정 방식',
+      description: '공중에 떠 있는 시간',
+      duration: '진행 시간: 2분',
+    },
+    {
+      videoSrc: Work6min,
+      title: '6분 걷기',
+      gradingMethod: '등급 산정 방식',
+      description: '거리',
+      duration: '진행 시간: 6분',
+    },
+  ];
+
+  const renderList = (items) => {
+    return (
+      <div className="physical__list-des">
+        {items.map((item, index) => (
+          <div key={index} className="physical__list-item">
+            <div className="img__box" onClick={item.onClick}>
+              <video
+                className="gif-img"
+                controlsList="nofullscreen"
+                controls
+                muted
+              >
+                <source
+                  src={listImg === 'women' ? BloodDes : item.videoSrc}
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div className="des__box">
+              <div className="img__description">종목</div>
+              <div className="img__description">{item.title}</div>
+              <div className="img__description">{item.gradingMethod}</div>
+              <div className="img__description">{item.description}</div>
+              <div className="img__description span">
+                {typeof item.duration === 'object' ? (
+                  <div>
+                    <div>{item.duration.male}</div>
+                    <div>{item.duration.female}</div>
+                  </div>
+                ) : (
+                  item.duration
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   useEffect(() => {
     let mouseTimer;
 
@@ -29,6 +213,7 @@ function Home() {
       mouseTimer = setTimeout(() => {
         setActiveSection(null);
         setListSection(null);
+        setListImg(null);
       }, 120000);
     };
 
@@ -142,263 +327,13 @@ function Home() {
       </div>
 
       <div className="gif__description">
-        {listSection === null && (
-          <div className="physical__list-des">
-            <div className="physical__list-item main">
-              <div className="img__box mainImg">
-                <img
-                  onClick={() => handleListSectionClick('blooddes')}
-                  className="main-img"
-                  src={Img3}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        )}
-        {listSection === 'blooddes' && (
-          <div className="physical__list-des">
-            <div className="physical__list-item main">
-              <div className="img__box mainImg">
-                <img
-                  onClick={() => handleListSectionClick(null)}
-                  className="main-img"
-                  src={BloodDes}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        )}
-        {listSection === 't__cadio' && (
-          <div className="physical__list-des">
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">20m 왕복 오래달리기</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">횟수</div>
-                <div className="img__description span">
-                  진행 시간: 최대한 오래
-                </div>
-              </div>
-            </div>
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">트레드밀</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">심박수 + 신장 + 체중</div>
-                <div className="img__description span">진행 시간: 6분</div>
-              </div>
-            </div>
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">스텝 박스</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">심박수 + 체중 + 신장</div>
-                <div className="img__description span">
-                  남자: 3분, 50.8cm, 126bpm <br />
-                  여자: 3분, 45.7cm, 96bpm
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-        {listSection === 't__muscular' && (
-          <div className="physical__list-des">
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">윗몸 말아올리기</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">횟수</div>
-                <div className="img__description span">최대한 많이</div>
-              </div>
-            </div>
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">반복 점프</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">횟수</div>
-                <div className="img__description span">진행 시간: 30초</div>
-              </div>
-            </div>
-          </div>
-        )}
-        {listSection === 'a__cadio' && (
-          <div className="physical__list-des">
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">20m 왕복 오래달리기</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">횟수</div>
-                <div className="img__description span">
-                  진행 시간: 최대한 오래
-                </div>
-              </div>
-            </div>
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">트레드밀</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">심박수 + 신장 + 체중</div>
-                <div className="img__description span">
-                  남자: 9분 <br /> 여자: 6분
-                </div>
-              </div>
-            </div>
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="img" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">스텝 박스</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">심박수 + 체중 + 신장</div>
-                <div className="img__description span">3분, 30.5cm, 96bpm</div>
-              </div>
-            </div>
-          </div>
-        )}
-        {listSection === 'a__speed' && (
-          <div className="physical__list-des">
-            <div className="physical__list-item">
-              <div className="img__box">
-                <video
-                  className="gif-img"
-                  controlsList="nofullscreen"
-                  controls
-                  muted
-                >
-                  <source src={Run10m} type="video/mp4" />
-                </video>
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">10m 왕복 달리기</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">시간</div>
-                <div className="img__description span">최대한 빠르게</div>
-              </div>
-            </div>
-            <div className="physical__list-item">
-              <div className="img__box">
-                <video
-                  className="gif-img"
-                  controlsList="nofullscreen"
-                  controls
-                  muted
-                >
-                  <source src={SpeedTime} type="video/mp4" />
-                </video>
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">반응 시간</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">시간</div>
-                <div className="img__description span">최대한 빠르게</div>
-              </div>
-            </div>
-          </div>
-        )}
-        {listSection === 'a__power' && (
-          <div className="physical__list-des">
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">제자리 멀리뛰기</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">멀리 뛴 거리</div>
-                <div className="img__description span">제한 시간 없음</div>
-              </div>
-            </div>
-            <div className="physical__list-item">
-              <div className="img__box">
-                <img className="gif-img" src={Img2} alt="" />
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">체공 시간</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">공중에 떠 있는 시간</div>
-                <div className="img__description span">제한 시간 없음</div>
-              </div>
-            </div>
-          </div>
-        )}
-        {listSection === 'e__cadio' && (
-          <div className="physical__list-des">
-            <div className="physical__list-item">
-              <div className="img__box">
-                <video
-                  className="gif-img"
-                  controlsList="nofullscreen"
-                  controls
-                  muted
-                >
-                  <source src={Work2min} type="video/mp4" />
-                </video>
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">2분 제자리 걷기</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">횟수</div>
-                <div className="img__description span">진행 시간: 2분</div>
-              </div>
-            </div>
-            <div className="physical__list-item">
-              <div className="img__box">
-                <video
-                  className="gif-img"
-                  controlsList="nofullscreen"
-                  controls
-                  muted
-                >
-                  <source src={Work6min} type="video/mp4" />
-                </video>
-              </div>
-              <div className="des__box">
-                <div className="img__description">종목</div>
-                <div className="img__description">6분 걷기</div>
-                <div className="img__description">등급 산정 방식</div>
-                <div className="img__description">거리</div>
-                <div className="img__description span">진행 시간: 6분</div>
-              </div>
-            </div>
-          </div>
-        )}
+        {listSection === null && renderMainImg()}
+        {listSection === 't__cadio' && renderList(t__CardioItems)}
+        {listSection === 't__muscular' && renderList(t__MuscularItems)}
+        {listSection === 'a__cadio' && renderList(a__CardioItems)}
+        {listSection === 'a__speed' && renderList(a__SpeedItems)}
+        {listSection === 'a__power' && renderList(a__PowerItems)}
+        {listSection === 'e__cadio' && renderList(e__CadioItems)}
       </div>
     </div>
   );
