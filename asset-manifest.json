@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/physical-fitness-test/static/css/main.539a5d54.css",
-    "main.js": "/physical-fitness-test/static/js/main.1f5fa57a.js",
-    "static/media/test.mp4": "/physical-fitness-test/static/media/test.ffaf28fb4846f1906a20.mp4",
+    "main.js": "/physical-fitness-test/static/js/main.c130391a.js",
     "static/media/10m왕복달리기.mp4": "/physical-fitness-test/static/media/10m왕복달리기.63e0578ca421df5065e8.mp4",
     "static/media/6분걷기.mp4": "/physical-fitness-test/static/media/6분걷기.736ceda5450992732b51.mp4",
     "static/media/2분제자리걷기.mp4": "/physical-fitness-test/static/media/2분제자리걷기.8d5cf2279e1bcd756ca4.mp4",
     "static/media/반응시간.mp4": "/physical-fitness-test/static/media/반응시간.492e960f2b7597590d81.mp4",
     "static/media/01.png": "/physical-fitness-test/static/media/01.c979f95aa3fdff703dfa.png",
     "static/media/혈압소견서.png": "/physical-fitness-test/static/media/혈압소견서.57c932845fcbf4e24616.png",
+    "static/media/test.mp4": "/physical-fitness-test/static/media/test.967897ec412c729fe0f4.mp4",
     "static/media/혈압.png": "/physical-fitness-test/static/media/혈압.173a7bff69192bccec2f.png",
     "index.html": "/physical-fitness-test/index.html",
     "main.539a5d54.css.map": "/physical-fitness-test/static/css/main.539a5d54.css.map",
-    "main.1f5fa57a.js.map": "/physical-fitness-test/static/js/main.1f5fa57a.js.map"
+    "main.c130391a.js.map": "/physical-fitness-test/static/js/main.c130391a.js.map"
   },
   "entrypoints": [
     "static/css/main.539a5d54.css",
-    "static/js/main.1f5fa57a.js"
+    "static/js/main.c130391a.js"
   ]
 }
