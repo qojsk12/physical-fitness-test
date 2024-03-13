@@ -1,29 +1,59 @@
 import React, {useEffect, useState} from 'react';
+import _debounce from 'lodash/debounce';
 import './Home.css';
 import Img from '../image/01.png';
-import Img2 from '../image/02.gif';
 import Img3 from '../image/혈압.png';
 import Work2min from '../video/2분제자리걷기.mp4';
 import Work6min from '../video/6분걷기.mp4';
 import Run10m from '../video/10m왕복달리기.mp4';
 import SpeedTime from '../video/반응시간.mp4';
 import BloodDes from '../image/혈압소견서.png';
+import 윗몸말아올리기 from '../video/윗몸말아올리기.mp4';
+import 반복점프 from '../video/반복점프.mp4';
+import 제자리멀리뛰기 from '../video/제자리멀리뛰기.mp4';
+import 체공시간 from '../video/체공시간.mp4';
+import 왕복달리기20m from '../video/20m왕복달리기.mp4';
+import 트레드밀 from '../video/트레드밀.mp4';
+import 청소년스텝 from '../video/청소년스텝검사.mp4';
+import 성인기스텝 from '../video/성인기스텝검사.mp4';
 
 function Home() {
   const [activeSection, setActiveSection] = useState(null);
-  const handleSectionClick = (section) => {
+  const handleSectionClick = _debounce((section) => {
     setActiveSection(activeSection === section ? null : section);
-  };
+  }, 50);
 
   const [listSection, setListSection] = useState(null);
-  const handleListSectionClick = (list) => {
+  const handleListSectionClick = _debounce((list) => {
     setListSection(listSection === list ? null : list);
-  };
+  }, 50);
 
   const [listImg, setListImg] = useState(null);
-  const handleListImgClick = (item) => {
+  const handleListImgClick = _debounce((item) => {
     setListImg(listImg === item ? null : item);
-  };
+    console.log(listImg);
+  }, 50);
+
+  useEffect(() => {
+    let mouseTimer;
+
+    const handleMouseMove = () => {
+      clearTimeout(mouseTimer);
+
+      mouseTimer = setTimeout(() => {
+        setActiveSection(null);
+        setListSection(null);
+        setListImg(null);
+      }, 120000);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      clearTimeout(mouseTimer);
+    };
+  }, []);
 
   const renderMainImg = () => {
     return (
@@ -46,39 +76,38 @@ function Home() {
 
   const t__CardioItems = [
     {
-      videoSrc: Img2,
+      videoSrc: 왕복달리기20m,
       title: '20m 왕복 오래달리기',
       gradingMethod: '등급 산정 방식',
       description: '횟수',
       duration: '진행 시간: 최대한 오래',
     },
     {
-      videoSrc: Img2,
+      videoSrc: 트레드밀,
       title: '트레드밀',
       gradingMethod: '등급 산정 방식',
       description: '심박수 + 신장 + 체중',
       duration: '진행 시간: 6분',
     },
     {
-      imgSrc: Img2,
+      videoSrc: 청소년스텝,
       title: '스텝 박스',
       gradingMethod: '등급 산정 방식',
       description: '심박수 + 체중 + 신장',
       duration: '남자: 3분, 50.8cm, 126bpm, 여자: 3분, 45.7cm, 96bpm',
-      onClick: () => handleListImgClick('women'),
     },
   ];
 
   const t__MuscularItems = [
     {
-      videoSrc: Img2,
+      videoSrc: 윗몸말아올리기,
       title: '윗몸 말아올리기',
       gradingMethod: '등급 산정 방식',
       description: '횟수',
       duration: '최대한 많이',
     },
     {
-      videoSrc: Img2,
+      videoSrc: 반복점프,
       title: '반복점프',
       gradingMethod: '등급 산정 방식',
       description: '횟수',
@@ -88,24 +117,21 @@ function Home() {
 
   const a__CardioItems = [
     {
-      videoSrc: Img2,
+      videoSrc: 왕복달리기20m,
       title: '20m 왕복 오래달리기',
       gradingMethod: '등급 산정 방식',
       description: '횟수',
       duration: '진행 시간: 최대한 오래',
     },
     {
-      videoSrc: Img2,
+      videoSrc: 트레드밀,
       title: '트레드밀',
       gradingMethod: '등급 산정 방식',
       description: '심박수 + 신장 + 체중',
-      duration: {
-        male: '남자: 9분',
-        female: '여자: 6분',
-      },
+      duration: '남자 9분, 여자 6분',
     },
     {
-      imgSrc: Img2,
+      videoSrc: 성인기스텝,
       title: '스텝 박스',
       gradingMethod: '등급 산정 방식',
       description: '심박수 + 체중 + 신장',
@@ -132,14 +158,14 @@ function Home() {
 
   const a__PowerItems = [
     {
-      videoSrc: Img2,
+      videoSrc: 제자리멀리뛰기,
       title: '제자리 멀리뛰기',
       gradingMethod: '등급 산정 방식',
       description: '멀리 뛴 거리',
       duration: '2번 진행',
     },
     {
-      videoSrc: Img2,
+      videoSrc: 체공시간,
       title: '체공 시간',
       gradingMethod: '등급 산정 방식',
       description: '공중에 떠 있는 시간',
@@ -152,7 +178,7 @@ function Home() {
       videoSrc: Work2min,
       title: '2분 제자리 걷기',
       gradingMethod: '등급 산정 방식',
-      description: '공중에 떠 있는 시간',
+      description: '횟수',
       duration: '진행 시간: 2분',
     },
     {
@@ -169,17 +195,14 @@ function Home() {
       <div className="physical__list-des">
         {items.map((item, index) => (
           <div key={index} className="physical__list-item">
-            <div className="img__box" onClick={item.onClick}>
+            <div className="img__box">
               <video
                 className="gif-img"
                 controlsList="nofullscreen"
                 controls
                 muted
               >
-                <source
-                  src={listImg === 'women' ? BloodDes : item.videoSrc}
-                  type="video/mp4"
-                />
+                <source src={item.videoSrc} type="video/mp4" />
               </video>
             </div>
             <div className="des__box">
@@ -187,43 +210,13 @@ function Home() {
               <div className="img__description">{item.title}</div>
               <div className="img__description">{item.gradingMethod}</div>
               <div className="img__description">{item.description}</div>
-              <div className="img__description span">
-                {typeof item.duration === 'object' ? (
-                  <div>
-                    <div>{item.duration.male}</div>
-                    <div>{item.duration.female}</div>
-                  </div>
-                ) : (
-                  item.duration
-                )}
-              </div>
+              <div className="img__description span">{item.duration}</div>
             </div>
           </div>
         ))}
       </div>
     );
   };
-
-  useEffect(() => {
-    let mouseTimer;
-
-    const handleMouseMove = () => {
-      clearTimeout(mouseTimer);
-
-      mouseTimer = setTimeout(() => {
-        setActiveSection(null);
-        setListSection(null);
-        setListImg(null);
-      }, 120000);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      clearTimeout(mouseTimer);
-    };
-  }, []);
 
   return (
     <div className="container mobile">
@@ -267,11 +260,14 @@ function Home() {
         <div className="ages">
           <ul className="adult">
             <span
-              className="custom-div div-8"
+              className={`custom-div div-8 ${
+                activeSection === 'adult' ? 'test' : ''
+              }`}
               onClick={() => handleSectionClick('adult')}
             >
               성인기
             </span>
+
             {activeSection === 'adult' && (
               <div className="physical__list">
                 <li

@@ -13,6 +13,7 @@
       }
       .select__menu {
         &.mobile {
+          width: 100%;
           height: max-content;
           flex-direction: row;
           align-items: baseline;
@@ -44,6 +45,7 @@
       }
       .select__menu {
         &.mobile {
+          width: 100%;
           height: max-content;
           flex-direction: column;
           align-items: center;
@@ -63,6 +65,11 @@
             height: auto;
             &.main {
               display: none;
+            }
+            .des__box {
+              .img__description {
+                font-size: 15px;
+              }
             }
           }
         }
@@ -84,14 +91,12 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 0.5fr 10fr;
   grid-template-rows: auto;
-  height: 100vh;
   .header_main_name {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 10fr;
-
     .header__img {
       width: 100%;
       height: 100%;
@@ -108,7 +113,7 @@
   }
 
   .select__menu {
-    box-shadow: 0px 5px 20px 0px #898888;
+    width: 175px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -126,23 +131,33 @@
       align-items: center;
       text-align: center;
       font-size: 22px;
+
       .physical__list {
         display: flex;
         flex-direction: column;
         gap: 5px;
         font-size: 18px;
+        transition-delay: 1s;
+
         .common {
+          box-sizing: border-box;
+          padding: 4px;
+          cursor: pointer;
+          &:hover {
+            color: #d9ff00;
+          }
           &:first-child {
-            cursor: pointer;
-            margin-top: 10px;
+            margin-top: 15px;
           }
         }
       }
+
       &:first-child {
         margin-top: 50px;
       }
+
       .custom-div {
-        width: 150px;
+        width: 130px;
         height: 40px;
         border-radius: 5px;
         cursor: pointer;
@@ -230,6 +245,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 40px 60px;
+
     .physical__list-des {
       display: flex;
       width: 100%;
@@ -253,19 +269,20 @@
           .mainImg {
             height: 100%;
             .main-img {
+              width: 100%;
               height: 100%;
+              /* object-fit: cover; */
             }
           }
         }
         .img__box {
           width: 100%;
-          height: 600px;
-          overflow: hidden;
+          height: 650px;
           .gif-img {
             padding: 1px;
             width: 100%;
-            height: 600px;
-            object-fit: cover;
+            height: 100%;
+            object-fit: fill;
             box-sizing: border-box;
           }
         }
