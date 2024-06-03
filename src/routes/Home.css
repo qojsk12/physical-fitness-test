@@ -92,7 +92,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 0.5fr 10fr;
-  grid-template-rows: auto;
+  grid-template-rows: max-content;
   .header_main_name {
     grid-column: 1 / -1;
     display: grid;
