@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/physical-fitness-test/static/css/main.273710c6.css",
-    "main.js": "/physical-fitness-test/static/js/main.09b719e7.js",
-    "static/media/청소년스텝검사.mp4": "/physical-fitness-test/static/media/청소년스텝검사.2dd80b625fcff2bfb3c4.mp4",
-    "static/media/성인기스텝검사.mp4": "/physical-fitness-test/static/media/성인기스텝검사.cc24f1a8af7e0e47cd16.mp4",
-    "static/media/윗몸말아올리기.mp4": "/physical-fitness-test/static/media/윗몸말아올리기.49bd20bc5ee9a71c7193.mp4",
-    "static/media/20m왕복달리기.mp4": "/physical-fitness-test/static/media/20m왕복달리기.7e5cd0ad7c4928f0da4a.mp4",
-    "static/media/6분걷기.mp4": "/physical-fitness-test/static/media/6분걷기.93583d341551ee48121e.mp4",
-    "static/media/트레드밀.mp4": "/physical-fitness-test/static/media/트레드밀.af112830a76a56e71755.mp4",
-    "static/media/체공시간.mp4": "/physical-fitness-test/static/media/체공시간.2cdbfb14455a1e4c183b.mp4",
-    "static/media/반복점프.mp4": "/physical-fitness-test/static/media/반복점프.a8f22d7d9d9fe274c64e.mp4",
-    "static/media/10m왕복달리기.mp4": "/physical-fitness-test/static/media/10m왕복달리기.b2820af3432c066f78be.mp4",
-    "static/media/2분제자리걷기.mp4": "/physical-fitness-test/static/media/2분제자리걷기.3717eade2053c5aa5c08.mp4",
-    "static/media/제자리멀리뛰기.mp4": "/physical-fitness-test/static/media/제자리멀리뛰기.0d657e0f9e3ae4545bd7.mp4",
-    "static/media/반응시간.mp4": "/physical-fitness-test/static/media/반응시간.92522662eb04a764af3b.mp4",
-    "static/media/혈압소견서.png": "/physical-fitness-test/static/media/혈압소견서.f351c22d9f6e9d7ab9a5.png",
-    "static/media/01.png": "/physical-fitness-test/static/media/01.c979f95aa3fdff703dfa.png",
-    "static/media/혈압.png": "/physical-fitness-test/static/media/혈압.173a7bff69192bccec2f.png",
-    "index.html": "/physical-fitness-test/index.html",
-    "main.273710c6.css.map": "/physical-fitness-test/static/css/main.273710c6.css.map",
-    "main.09b719e7.js.map": "/physical-fitness-test/static/js/main.09b719e7.js.map"
+    "main.css": "/static/css/main.273710c6.css",
+    "main.js": "/static/js/main.dc270626.js",
+    "static/media/청소년스텝검사.mp4": "/static/media/청소년스텝검사.2dd80b625fcff2bfb3c4.mp4",
+    "static/media/성인기스텝검사.mp4": "/static/media/성인기스텝검사.cc24f1a8af7e0e47cd16.mp4",
+    "static/media/윗몸말아올리기.mp4": "/static/media/윗몸말아올리기.49bd20bc5ee9a71c7193.mp4",
+    "static/media/20m왕복달리기.mp4": "/static/media/20m왕복달리기.7e5cd0ad7c4928f0da4a.mp4",
+    "static/media/6분걷기.mp4": "/static/media/6분걷기.93583d341551ee48121e.mp4",
+    "static/media/트레드밀.mp4": "/static/media/트레드밀.af112830a76a56e71755.mp4",
+    "static/media/체공시간.mp4": "/static/media/체공시간.2cdbfb14455a1e4c183b.mp4",
+    "static/media/반복점프.mp4": "/static/media/반복점프.a8f22d7d9d9fe274c64e.mp4",
+    "static/media/10m왕복달리기.mp4": "/static/media/10m왕복달리기.b2820af3432c066f78be.mp4",
+    "static/media/2분제자리걷기.mp4": "/static/media/2분제자리걷기.3717eade2053c5aa5c08.mp4",
+    "static/media/제자리멀리뛰기.mp4": "/static/media/제자리멀리뛰기.0d657e0f9e3ae4545bd7.mp4",
+    "static/media/반응시간.mp4": "/static/media/반응시간.92522662eb04a764af3b.mp4",
+    "static/media/혈압소견서.png": "/static/media/혈압소견서.f351c22d9f6e9d7ab9a5.png",
+    "static/media/01.png": "/static/media/01.c979f95aa3fdff703dfa.png",
+    "static/media/혈압.png": "/static/media/혈압.173a7bff69192bccec2f.png",
+    "index.html": "/index.html",
+    "main.273710c6.css.map": "/static/css/main.273710c6.css.map",
+    "main.dc270626.js.map": "/static/js/main.dc270626.js.map"
   },
   "entrypoints": [
     "static/css/main.273710c6.css",
-    "static/js/main.09b719e7.js"
+    "static/js/main.dc270626.js"
   ]
 }
